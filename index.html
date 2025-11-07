@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <title>AlexBeer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #196c6c;
+      height: 100%;
+      overflow: hidden;
+    }
+    @font-face {
+      font-family: 'GameFont';
+      src: url('assets/fonts/._alagard-12px-unicode┬áΓÇö ╨║╨╛╨┐╨╕╤Å.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    #game-root {
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+    body { touch-action: manipulation; overscroll-behavior: none; }
+    canvas { image-rendering: pixelated; }
+  </style>
+  <!-- Phaser CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="game-root"></div>
+  <script src="main.js"></script>
+</body>
+</html>
